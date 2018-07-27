@@ -1,9 +1,9 @@
 package IHUI_colocation;
 
 public class Item {
-    int itemNo = 0;
-    int itemProfit = 0;
-    int ITWUtil = 0;
+    private int itemNo = 0;
+    private int itemProfit = 0;
+    private long ITWUtil = 0;
     
     public Item() {
 		// TODO Auto-generated constructor stub
@@ -15,9 +15,9 @@ public class Item {
     public void setItemProfit(int ItemProfit) {
 		this.itemProfit = ItemProfit;
 	}    
-    public void setITWUtil(int ITWUtil) {
+    public void setITWUtil(long ITWUtil) {
 		this.ITWUtil = ITWUtil;
-	}//设置item项的No、Profit和ITWUtil
+	}/*设置item项的No、Profit和ITWUtil*/
     
     
     public int getItemNo() {
@@ -26,9 +26,9 @@ public class Item {
     public int getItemProfit() {
 		return this.itemProfit;
 	}
-    public int getITWUtil() {
+    public long getITWUtil() {
 		return this.ITWUtil;
-	}//获取item项的No、Profit和ITWUtil
+	}/*获取item项的No、Profit和ITWUtil*/
     
     public boolean operator(Item i) {//
 		if (getITWUtil() == i.getITWUtil()){
