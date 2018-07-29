@@ -1,6 +1,6 @@
 package IHUI_colocation;
 
-public class Item {
+public class Item {/*表示单个项*/
     private int itemNo = 0;
     private int itemProfit = 0;
     private long ITWUtil = 0;
