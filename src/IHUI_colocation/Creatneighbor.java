@@ -50,9 +50,10 @@ public class Creatneighbor {
 	
 	public static <E> ArrayList<ArrayList<String>> creatneighbor()
 			throws FileNotFoundException {
-
+		
 		ArrayList<String> data = importdata();// 原来引入并整理好的数据
-		ArrayList<ArrayList<String>> neighbortype = new ArrayList<ArrayList<String>>(); // 存储每个点对应的临近点信息
+		
+		ArrayList<ArrayList<String>> neighbortype = new ArrayList<ArrayList<String>>(); // 存储每个点对应的临近点的ID
 		double distancethreshold = 0.1;// 距离最大值
 		int i = 0;
 

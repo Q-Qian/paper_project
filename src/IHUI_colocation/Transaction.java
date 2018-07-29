@@ -35,7 +35,7 @@ public class Transaction {/*表示一条事务*/
 	public int getID() {		
 		return this.ID;		
 	}//获取事务的ID
-	public Item getItem() {
+	public Vector<Integer> getItem() {
 		return this.item;
 	}
 	public int getTWUtil() {
