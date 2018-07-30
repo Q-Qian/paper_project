@@ -2,6 +2,10 @@ package IHUI_colocation;
 
 import java.awt.List;
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.TreeMap;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
 
 public class Mine {
 	public Mine() {
@@ -12,6 +16,9 @@ public class Mine {
 	
 	public void htwumine() {
 		
+		for (; i < array.length; i++) {
+			
+		}
 	}
 	
 	public void humine() {

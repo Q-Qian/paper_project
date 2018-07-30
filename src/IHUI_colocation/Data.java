@@ -16,13 +16,18 @@ public class Data {
 	int cenurrt = 0;
 	ArrayList<ArrayList<String>> maximalclique_data = Creatneighbor.creatneighbor();
 	public Transaction getNext() {
-		Transaction t = new Transaction();
 		
-		return t;
+		
+		return new Transaction();
 	}
 	
 	public void initPro() {
-		
+		int k = 0;
+		int value = 0;
+		int flag = 0;
+		do {
+			
+		} while (condition);
 	}
 	
 	private Transaction getNextAsFlat() {
@@ -30,7 +35,7 @@ public class Data {
 		int c;
 		for(ArrayList<String> b:maximalclique_data){
 			int item = 0;int pos = 0;
-			while((b>='0') && (b<='9')){}
+			while(b>=0) && (b<='9')){}
 		}
 	}
 
