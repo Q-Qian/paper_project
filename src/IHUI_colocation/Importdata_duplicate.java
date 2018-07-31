@@ -6,7 +6,11 @@ import java.util.*;
 public class Importdata_duplicate {
 
 	public static void main(String[] args) throws FileNotFoundException {
+		long time0 = System.currentTimeMillis();
 		importdata();
+		long time1 = System.currentTimeMillis();
+		long wastetime = (time1-time0);
+		System.out.println("总共用时："+wastetime+"毫秒");
 	}//主程序
 	
 

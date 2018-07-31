@@ -25,8 +25,13 @@ public class Init {
 		
 	}
 	
-	public void initMinUtil(double minPoint) {
-		
+	public double initMinUtil(double minPoint) {//初始化最小效用阈值
+		long htwusum = 0;
+		double ucheckutil = 0.0;
+		for (int i = (external.twu.size()-1); i >0; htwusum += external.twu.indexOf(i--));
+			ucheckutil = htwusum*minPoint;
+			double min_util = ucheckutil;
+			return min_util;
 	}
 	
 	public void initHTWUItems() {
@@ -45,7 +50,7 @@ public class Init {
 			}
 		}
 		
-		Set<String> itSet = itemMap
+		Set<String> itSet = 
 	}	
 
 }
