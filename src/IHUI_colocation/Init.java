@@ -1,6 +1,7 @@
 package IHUI_colocation;
 
 import java.io.OutputStream;
+import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
 
@@ -21,7 +22,9 @@ public class Init {
 		
 	}
 	
-	public void initItemMap() {
+	public Map<String, Integer> initItemMap() {
+		
+		return null;
 		
 	}
 	
@@ -34,7 +37,8 @@ public class Init {
 			return min_util;
 	}
 	
-	public void initHTWUItems() {
+	public void initHTWUItems() {//获得全体高效用事务项目
+		
 		
 	}
 	

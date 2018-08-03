@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Vector;
 
 import javax.print.DocFlavor.INPUT_STREAM;
@@ -23,16 +24,19 @@ public class Data {
 	int cenurrt = 0;
 	ArrayList<ArrayList<String>> maximalclique_data = Creatneighbor.creatneighbor();
 	
-	public Map<String, Integer> initPro(String typefile) throws FileNotFoundException {
-		Map<String,Integer> itemMap = new HashMap<String,Integer>();
-		int key = 0;
-		int value = 0;
-		int flag = 0;
+	public static Map<Integer, Double> initPro(String typefile) throws IOException {
+		Map<Integer,Double> itemMap = new HashMap<Integer,Double>();
 		
 		File file = new File(typefile);
 		FileInputStream typein = new FileInputStream(file);
-		
-		
+		int temptype;
+		while ((temptype = typein.read()) != -1) {
+			System.out.println("请输入类型"+temptype+"的效用值：");
+			Scanner unityinput = new Scanner(System.in);
+			double tempunity = unityinput.nextDouble();
+			itemMap.put(temptype, tempunity);		
+			
+		}		
 		
 		return itemMap;
  	}
