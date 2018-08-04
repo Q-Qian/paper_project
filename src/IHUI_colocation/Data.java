@@ -30,7 +30,7 @@ public class Data {
 		File file = new File(typefile);
 		FileInputStream typein = new FileInputStream(file);
 		int temptype;
-		while ((temptype = typein.read()) != -1) {
+		while ((temptype = typein.read()) != 0) {
 			System.out.println("请输入类型"+temptype+"的效用值：");
 			Scanner unityinput = new Scanner(System.in);
 			double tempunity = unityinput.nextDouble();
